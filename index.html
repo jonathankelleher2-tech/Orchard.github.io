@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orchard Pointe — Homeowners Association</title>
+  <meta name="description" content="Orchard Pointe HOA — official neighborhood website with bylaws, meetings, committees, calendar, forms, and community photos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --brand:#0f766e; /* teal-700 */
+      --brand-2:#065f46; /* emerald-800 */
+    }
+    body{font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"}
+    .headline{font-family:"Playfair Display", Georgia, serif}
+    .glass{backdrop-filter: blur(6px)}
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 bg-white/80 glass border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#home" class="flex items-center gap-3">
+          <img src="images/welcome-sign.PNG" alt="Orchard Pointe welcome sign" class="h-10 w-10 rounded shadow" />
+          <span class="headline text-xl sm:text-2xl tracking-tight">Orchard&nbsp;Pointe</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
+          <a class="hover:text-emerald-700" href="#about">About</a>
+          <a class="hover:text-emerald-700" href="#governance">Governance</a>
+          <a class="hover:text-emerald-700" href="#meetings">Meetings</a>
+          <a class="hover:text-emerald-700" href="#committees">Committees</a>
+          <a class="hover:text-emerald-700" href="#management">Management</a>
+          <a class="hover:text-emerald-700" href="#calendar">Calendar</a>
+          <a class="hover:text-emerald-700" href="#gallery">Photos</a>
+          <a class="hover:text-emerald-700" href="#contact">Contact</a>
+        </nav>
+        <a href="#contact" class="md:inline-block hidden rounded-xl bg-emerald-700 px-4 py-2 text-white font-semibold shadow hover:bg-emerald-800">Resident Portal</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative isolate overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <img src="images/house-1.jpg" alt="Townhome at Orchard Pointe" class="h-full w-full object-cover object-center opacity-60">
+      <div class="absolute inset-0 bg-gradient-to-r from-emerald-900/70 via-emerald-800/60 to-transparent"></div>
+    </div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <div class="max-w-2xl text-white">
+        <h1 class="headline text-4xl sm:text-5xl md:text-6xl leading-tight">Welcome to <span class="whitespace-nowrap">Orchard&nbsp;Pointe</span></h1>
+        <p class="mt-5 text-lg md:text-xl text-emerald-50">A neighborhood of 144 townhomes where community, care, and great neighbors take root.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#governance" class="rounded-xl bg-white/90 text-emerald-900 px-4 py-2 font-semibold shadow hover:bg-white">Bylaws & Rules</a>
+          <a href="#gallery" class="rounded-xl bg-emerald-700 px-4 py-2 font-semibold shadow hover:bg-emerald-800">Explore Photos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="headline text-3xl sm:text-4xl">About Our Community</h2>
+          <p class="mt-4 leading-relaxed">Orchard Pointe is a thoughtfully planned community in which the Homeowners Association’s mission is to provide an enhanced sense of community through transparency, honesty, and activities; to enforce rules with diligence, fairness, and compassion when needed; and to always act with the good of our residents as our primary focus.</p>
+          <ul class="mt-6 space-y-2">
+            <li class="flex items-start gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-emerald-600"></span> 144 townhomes with maintained common areas</li>
+            <li class="flex items-start gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-emerald-600"></span> Pavilion & green spaces for neighborhood gatherings</li>
+            <li class="flex items-start gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-emerald-600"></span> Professional property management and active HOA board</li>
+          </ul>
+        </div>
+        <div class="relative">
+          <img src="images/community-kids.jpg" alt="Kids at an Orchard Pointe event" class="rounded-2xl shadow-xl ring-1 ring-black/10 w-full" />
+          <img src="images/hazebo.jpg" alt="Neighborhood gazebo" class="hidden sm:block absolute -bottom-6 -left-6 w-40 rounded-xl shadow-lg ring-1 ring-black/10" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links Cards -->
+  <section class="py-8 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <a href="#governance" class="group rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-6 shadow-sm hover:shadow-md">
+          <h3 class="font-semibold">Bylaws, Covenants & Rules</h3>
+          <p class="mt-2 text-sm text-slate-600">Understand community standards and how to request exterior changes.</p>
+          <span class="mt-3 inline-block text-emerald-700 font-semibold group-hover:translate-x-1 transition">Learn more →</span>
+        </a>
+        <a href="#meetings" class="group rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-6 shadow-sm hover:shadow-md">
+          <h3 class="font-semibold">Board Meetings</h3>
+          <p class="mt-2 text-sm text-slate-600">Quarterly sessions in January, April, July, and October; agendas & minutes posted here.</p>
+          <span class="mt-3 inline-block text-emerald-700 font-semibold group-hover:translate-x-1 transition">View details →</span>
+        </a>
+        <a href="#management" class="group rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-6 shadow-sm hover:shadow-md">
+          <h3 class="font-semibold">Property Management</h3>
+          <p class="mt-2 text-sm text-slate-600">What Sentry Management handles and how to access the resident portal.</p>
+          <span class="mt-3 inline-block text-emerald-700 font-semibold group-hover:translate-x-1 transition">See services →</span>
+        </a>
+        <a href="#contact" class="group rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-6 shadow-sm hover:shadow-md">
+          <h3 class="font-semibold">Contact & Links</h3>
+          <p class="mt-2 text-sm text-slate-600">HOA email, Sentry portal, and Facebook group.</p>
+          <span class="mt-3 inline-block text-emerald-700 font-semibold group-hover:translate-x-1 transition">Get in touch →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Governance -->
+  <section id="governance" class="py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="headline text-3xl sm:text-4xl">Governance</h2>
+      <div class="mt-8 grid lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 space-y-6">
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-xl font-semibold">Bylaws</h3>
+            <p class="mt-2 text-slate-700">Our bylaws outline membership, voting, board composition and responsibilities, committees, financial stewardship, and the role of property management. These were established in compliance with New York State HOA regulations.</p>
+            <a class="mt-3 inline-block font-semibold text-emerald-700" href="#">Download Bylaws (PDF)</a>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-xl font-semibold">Covenants & Restrictions</h3>
+            <p class="mt-2 text-slate-700">Community standards for exterior décor, fencing, signage, tree removal, parking, and more. Potential penalties for violations are defined to ensure fairness and consistency.</p>
+            <a class="mt-3 inline-block font-semibold text-emerald-700" href="#">View Declaration</a>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="text-xl font-semibold">Exterior Change Requests</h3>
+            <p class="mt-2 text-slate-700">Please submit an Exterior Change Request before starting any exterior project—no matter how small. Sentry reviews for guideline compliance and forwards to the HOA Board for final approval.</p>
+            <a class="mt-3 inline-block font-semibold text-emerald-700" href="#">Exterior Change Request Form</a>
+          </article>
+        </div>
+        <aside class="space-y-6">
+          <div class="rounded-2xl border border-emerald-100 bg-emerald-50 p-6">
+            <h4 class="font-semibold text-emerald-900">At a glance</h4>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li>• 144 homes</li>
+              <li>• HOA Board: 5 members</li>
+              <li>• Elections: annually each October</li>
+              <li>• Management: Sentry Management (through 2027)</li>
+            </ul>
+          </div>
+          <img src="images/community-member.jpg" alt="Community event table with treats" class="rounded-2xl shadow-md ring-1 ring-black/10 w-full"/>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meetings -->
+  <section id="meetings" class="py-16 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="headline text-3xl sm:text-4xl">Board Meetings</h2>
+          <p class="mt-4">The Board of Directors meets quarterly in <strong>January</strong>, <strong>April</strong>, <strong>July</strong>, and <strong>October</strong> at the Halfmoon Town Hall from 7:00–8:30 PM. April and October meetings are open to all homeowners. Please submit questions two weeks in advance.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#" class="rounded-xl bg-emerald-700 px-4 py-2 text-white font-semibold shadow hover:bg-emerald-800">Upcoming Agenda</a>
+            <a href="#" class="rounded-xl bg-slate-200 px-4 py-2 font-semibold hover:bg-slate-300">Past Minutes</a>
+          </div>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-6 shadow-sm">
+          <h3 class="font-semibold">Elections</h3>
+          <p class="mt-2 text-slate-700">Board seats are staggered to maintain continuity. Next October election: Secretary, Treasurer, and Member-at-Large. Nomination forms will be distributed in advance.</p>
+          <a href="#" class="mt-3 inline-block font-semibold text-emerald-700">Nomination Form</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Committees -->
+  <section id="committees" class="py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="headline text-3xl sm:text-4xl">Committees</h2>
+      <p class="mt-4 max-w-3xl">Each committee has at least three members, including one Board member. Meeting times are set by the chair and shared via email/text and on Facebook. Minutes are circulated to committee members and the Board.</p>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="font-semibold">Landscape & Grounds</h3>
+          <p class="mt-2 text-sm text-slate-600">Common areas, plantings, and seasonal enhancements.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="font-semibold">Architecture</h3>
+          <p class="mt-2 text-sm text-slate-600">Exterior changes, guidelines, and approvals.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="font-semibold">Community & Events</h3>
+          <p class="mt-2 text-sm text-slate-600">Neighborhood activities and pavilion events.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Management & Finances -->
+  <section id="management" class="py-16 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="headline text-3xl sm:text-4xl">Property Management</h2>
+          <p class="mt-4">Sentry Management partners with the HOA to handle assessments, vendor contracts (landscaping, snow removal, accounting), compliance support, and homeowner requests. The current contract runs through 2027.</p>
+          <ul class="mt-6 space-y-2 text-sm text-slate-700">
+            <li>• Collect and track homeowner fees & delinquencies</li>
+            <li>• Maintain HOA financial accounts</li>
+            <li>• Manage and certify community vendors</li>
+            <li>• Process Exterior Change Requests</li>
+            <li>• Advise the Board on legal and compliance matters</li>
+          </ul>
+          <a href="#" class="mt-6 inline-block rounded-xl bg-emerald-700 px-4 py-2 text-white font-semibold shadow hover:bg-emerald-800">Sentry Community Portal</a>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-6 shadow-sm">
+          <h3 class="font-semibold">Finances</h3>
+          <p class="mt-2 text-slate-700">Monthly fees cover snow removal, lawn care, mulching/edging of front beds, mowing of private lawns and common areas, shrub pruning, and retention pond maintenance. Annual financial reviews are shared with homeowners each September.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calendar -->
+  <section id="calendar" class="py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="headline text-3xl sm:text-4xl">Community Calendar</h2>
+      <p class="mt-4">A quarterly calendar with pavilion reservations and community events will be posted here and at the pavilion. Time‑sensitive updates will also appear on Facebook.</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="#" class="rounded-xl bg-slate-200 px-4 py-2 font-semibold hover:bg-slate-300">View Calendar</a>
+        <a href="#" class="rounded-xl bg-emerald-700 px-4 py-2 text-white font-semibold shadow hover:bg-emerald-800">Request Pavilion</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-16 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-4">
+        <h2 class="headline text-3xl sm:text-4xl">Neighborhood Photos</h2>
+        <span class="text-sm text-slate-500">All photos © Orchard Pointe residents</span>
+      </div>
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <figure class="overflow-hidden rounded-2xl shadow"><img class="w-full h-64 object-cover" src="images/welcome-sign.PNG" alt="Orchard Pointe welcome sign"><figcaption class="px-4 py-3 text-sm bg-slate-900/80 text-white">Welcome Sign at the entrance</figcaption></figure>
+        <figure class="overflow-hidden rounded-2xl shadow"><img class="w-full h-64 object-cover" src="images/house-1.jpg" alt="Townhome exterior"><figcaption class="px-4 py-3 text-sm bg-slate-900/80 text-white">Townhome exterior</figcaption></figure>
+        <figure class="overflow-hidden rounded-2xl shadow"><img class="w-full h-64 object-cover" src="images/hazebo.jpg" alt="Community gazebo"><figcaption class="px-4 py-3 text-sm bg-slate-900/80 text-white">Community gazebo</figcaption></figure>
+        <figure class="overflow-hidden rounded-2xl shadow"><img class="w-full h-64 object-cover" src="images/community-kids.jpg" alt="Neighborhood egg hunt"><figcaption class="px-4 py-3 text-sm bg-slate-900/80 text-white">Neighborhood event</figcaption></figure>
+        <figure class="overflow-hidden rounded-2xl shadow"><img class="w-full h-64 object-cover" src="images/community-member.jpg" alt="Resident at community table"><figcaption class="px-4 py-3 text-sm bg-slate-900/80 text-white">Community gathering</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="headline text-3xl sm:text-4xl">Contact & Useful Links</h2>
+          <p class="mt-4">Have a question about dues, an exterior change, or a community issue? Email the HOA or visit the Sentry portal.</p>
+          <ul class="mt-6 space-y-2">
+            <li><strong>Email:</strong> <a class="text-emerald-700 font-semibold" href="mailto:hoa@example.com">hoa@example.com</a></li>
+            <li><strong>Resident Portal:</strong> <a class="text-emerald-700 font-semibold" href="#">Sentry Management</a></li>
+            <li><strong>Facebook Group:</strong> <a class="text-emerald-700 font-semibold" href="#">Orchard Pointe Community</a></li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-6 shadow-sm">
+          <h3 class="font-semibold">Mailing Address</h3>
+          <p class="mt-2 text-slate-700">[Insert Sentry mailing address for dues and correspondence.]</p>
+          <p class="mt-4 text-sm text-slate-500">*Replace placeholders above with the live links and addresses from your documents or portal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white py-10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-600">© <span id="y"></span> Orchard Pointe Homeowners Association. All rights reserved.</p>
+      <a href="#home" class="text-sm font-semibold text-emerald-700">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear()
+  </script>
+</body>
+</html>
