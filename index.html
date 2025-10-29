@@ -124,7 +124,7 @@
           <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h3 class="text-xl font-semibold">Covenants & Restrictions</h3>
             <p class="mt-2 text-slate-700">Community standards for exterior décor, fencing, signage, tree removal, parking, and more. Potential penalties for violations are defined to ensure fairness and consistency.</p>
-            <a class="mt-3 inline-block font-semibold text-emerald-700" href="#">View Declaration</a>
+            <a class="mt-3 inline-block font-semibold text-emerald-700" href="images/DCR.pdf" target="_blank" rel="noopener">View Declaration</a>
           </article>
           <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <h3 class="text-xl font-semibold">Exterior Change Requests</h3>
@@ -221,4 +221,61 @@
       <h2 class="headline text-3xl sm:text-4xl">Community Calendar</h2>
       <p class="mt-4">A quarterly calendar with pavilion reservations and community events will be posted here and at the pavilion. Time-sensitive updates will also appear on Facebook.</p>
       <div class="mt-6 flex flex-wrap gap-3">
-        <a href="#" class="rounded-xl bg-slate-200 px-4 py-
+        <a href="#" class="rounded-xl bg-slate-200 px-4 py-2 font-semibold hover:bg-slate-300">View Calendar</a>
+        <a href="#" class="rounded-xl bg-emerald-700 px-4 py-2 text-white font-semibold shadow hover:bg-emerald-800">Request Pavilion</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-16 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-4">
+        <h2 class="headline text-3xl sm:text-4xl">Neighborhood Photos</h2>
+        <span class="text-sm text-slate-500">All photos © Orchard Pointe residents</span>
+      </div>
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <figure class="overflow-hidden rounded-2xl shadow"><img class="w-full h-64 object-cover" src="images/welcome-sign.PNG" alt="Orchard Pointe welcome sign"><figcaption class="px-4 py-3 text-sm bg-slate-900/80 text-white">Welcome Sign at the entrance</figcaption></figure>
+        <figure class="overflow-hidden rounded-2xl shadow"><img class="w-full h-64 object-cover" src="images/house-1.jpg" alt="Townhome exterior"><figcaption class="px-4 py-3 text-sm bg-slate-900/80 text-white">Townhome exterior</figcaption></figure>
+        <figure class="overflow-hidden rounded-2xl shadow"><img class="w-full h-64 object-cover" src="images/hazebo.jpg" alt="Community gazebo"><figcaption class="px-4 py-3 text-sm bg-slate-900/80 text-white">Community gazebo</figcaption></figure>
+        <figure class="overflow-hidden rounded-2xl shadow"><img class="w-full h-64 object-cover" src="images/community-kids.jpg" alt="Neighborhood egg hunt"><figcaption class="px-4 py-3 text-sm bg-slate-900/80 text-white">Neighborhood event</figcaption></figure>
+        <figure class="overflow-hidden rounded-2xl shadow"><img class="w-full h-64 object-cover" src="images/community-member.jpg" alt="Resident at community table"><figcaption class="px-4 py-3 text-sm bg-slate-900/80 text-white">Community gathering</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="headline text-3xl sm:text-4xl">Contact & Useful Links</h2>
+          <p class="mt-4">Have a question about dues, an exterior change, or a community issue? Email the HOA or visit the Sentry portal.</p>
+          <ul class="mt-6 space-y-2">
+            <li><strong>Email:</strong> <a class="text-emerald-700 font-semibold" href="mailto:hoa@example.com">hoa@example.com</a></li>
+            <li><strong>Resident Portal:</strong> <a class="text-emerald-700 font-semibold" href="#">Sentry Management</a></li>
+            <li><strong>Facebook Group:</strong> <a class="text-emerald-700 font-semibold" href="#">Orchard Pointe Community</a></li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-6 shadow-sm">
+          <h3 class="font-semibold">Mailing Address</h3>
+          <p class="mt-2 text-slate-700">[Insert Sentry mailing address for dues and correspondence.]</p>
+          <p class="mt-4 text-sm text-slate-500">*Replace placeholders above with the live links and addresses from your documents or portal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white py-10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-600">© <span id="y"></span> Orchard Pointe Homeowners Association. All rights reserved.</p>
+      <a href="#home" class="text-sm font-semibold text-emerald-700">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear()
+  </script>
+</body>
+</html>
